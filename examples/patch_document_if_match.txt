@@ -1,0 +1,4 @@
+curl -X PATCH "http://127.0.0.1:8000/documents/msa-001" ^
+  -H "Content-Type: application/json" ^
+  -H "If-Match: \"v1\"" ^
+  -d "{\"changes\":[{\"operation\":\"replace\",\"target\":{\"text\":\"delivery\",\"occurrence\":1},\"replacement\":\"implementation\"}]}"

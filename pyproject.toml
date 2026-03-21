@@ -1,0 +1,20 @@
+[project]
+name = "legal-tech-redline-service"
+version = "0.1.0"
+description = "Document redlining and search service"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "httpx<0.25",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

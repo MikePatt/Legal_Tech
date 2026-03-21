@@ -1,0 +1,3 @@
+curl "http://127.0.0.1:8000/documents/search?q=agreement&limit=10&offset=0"
+
+curl "http://127.0.0.1:8000/documents/msa-001/search?q=service%20agreement"
